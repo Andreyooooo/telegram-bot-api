@@ -166,7 +166,7 @@ func (u *Update) FromChat() *Chat {
 }
 
 // UpdatesChannel is the channel for getting updates.
-type UpdatesChannel <-chan Update
+type UpdatesChannel chan Update
 
 // Clear discards all unprocessed incoming updates.
 func (ch UpdatesChannel) Clear() {
